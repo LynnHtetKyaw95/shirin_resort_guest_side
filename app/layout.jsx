@@ -8,6 +8,8 @@ const quicksand = Quicksand({
   display: "swap",
 });
 
+const thisYear = new Date().getFullYear();
+
 export const metadata = {
   title: {
     template: "%s | The Shirin Resort",
@@ -30,6 +32,12 @@ const RootLayout = ({ children }) => {
             {children}
           </main>
         </div>
+
+        <footer className="py-10 flex justify-center items-center bg-primary-200">
+          <div>
+            <p>2025 - {thisYear} Created by Zeph | &copy; The Shirin Resort</p>
+          </div>
+        </footer>
       </body>
     </html>
   );
