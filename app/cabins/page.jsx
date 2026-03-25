@@ -2,10 +2,12 @@ import { Suspense } from "react";
 import CabinList from "../_components/CabinList";
 import Spinner from "../_components/Spinner";
 
+export const revalidate = 3600; // 1 hour
+
 export const metadata = {
   title: "Cabins",
 };
-const Page = () => {
+const Page = async () => {
   return (
     <div>
       <h1 className="text-4xl mb-5 text-primary font-medium">

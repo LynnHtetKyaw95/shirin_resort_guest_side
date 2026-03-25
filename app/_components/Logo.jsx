@@ -9,6 +9,7 @@ function Logo() {
       <Image
         className="w-35"
         src={logo}
+        loading="eager"
         height="auto"
         width="auto"
         quality={100}

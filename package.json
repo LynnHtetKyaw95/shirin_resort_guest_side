@@ -6,6 +6,7 @@
     "dev": "next dev",
     "host": "next dev -H 192.168.1.55 -p 3000",
     "build": "next build",
+    "prod": "next dev -H 192.168.1.55 -p 3000 && next start",
     "start": "next start",
     "lint": "eslint"
   },
