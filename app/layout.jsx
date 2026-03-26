@@ -2,6 +2,7 @@ import { Quicksand } from "next/font/google";
 
 import "./_styles/globals.css";
 import Header from "./_components/Header";
+import { ReservationProvider } from "./_components/ReservationContext";
 
 const quicksand = Quicksand({
   subsets: ["latin"],
@@ -29,7 +30,7 @@ const RootLayout = ({ children }) => {
 
         <div className="flex-1 px-8 py-12 grid">
           <main className="max-w-7xl mx-auto text-accent-800 w-full">
-            {children}
+            <ReservationProvider>{children}</ReservationProvider>
           </main>
         </div>
 
