@@ -4,7 +4,7 @@ import about1 from "@/public/about-1.jpg";
 import Link from "next/link";
 import { getCabins } from "../_lib/apiService";
 
-export const revalidate = 60 * 60 * 24; // 1 day
+// export const revalidate = 60 * 60 * 24; // 1 day
 
 export const metadata = {
   title: "About",
