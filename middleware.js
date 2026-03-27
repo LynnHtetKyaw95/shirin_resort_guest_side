@@ -10,6 +10,7 @@ import { auth } from "./app/_lib/auth";
 
 export const middleware = auth;
 
+// account page needs to check there is user or not
 export const config = {
   matcher: ["/account"],
 };

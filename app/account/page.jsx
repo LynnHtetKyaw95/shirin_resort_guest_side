@@ -13,4 +13,5 @@ const page = async () => {
     </h2>
   );
 };
+
 export default page;
