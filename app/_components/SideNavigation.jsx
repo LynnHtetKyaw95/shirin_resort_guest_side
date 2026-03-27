@@ -13,17 +13,17 @@ const navLinks = [
   {
     name: "Home",
     href: "/account",
-    icon: <HomeIcon className="h-5 w-5 text-primary-600" />,
+    icon: <HomeIcon className="h-5 w-5 text-primary" />,
   },
   {
     name: "Reservations",
     href: "/account/reservations",
-    icon: <CalendarDaysIcon className="h-5 w-5 text-primary-600" />,
+    icon: <CalendarDaysIcon className="h-5 w-5 text-primary" />,
   },
   {
     name: "Guest profile",
     href: "/account/profile",
-    icon: <UserIcon className="h-5 w-5 text-primary-600" />,
+    icon: <UserIcon className="h-5 w-5 text-primary" />,
   },
 ];
 
@@ -36,7 +36,7 @@ const SideNavigation = () => {
         {navLinks.map((link) => (
           <li key={link.name}>
             <Link
-              className={`py-3 px-5 hover:bg-primary-900 hover:text-primary-100 transition-colors flex items-center gap-4 font-semibold text-primary-500 ${pathname === link.href ? "bg-primary-300 " : ""}`}
+              className={`py-3 px-5 hover:bg-primary-900 hover:text-primary-100 transition-colors flex items-center gap-4 font-semibold text-primary ${pathname === link.href ? "bg-primary-300 " : ""}`}
               href={link.href}
             >
               {link.icon}

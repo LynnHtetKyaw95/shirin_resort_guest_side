@@ -20,31 +20,31 @@ const Cabin = ({ cabin }) => {
       </div>
 
       <div>
-        <h3 className="text-primary font-black text-7xl mb-5 -translate-x-63.5 bg-primary-50 p-6 pb-1 w-[150%]">
+        <h3 className="text-primary font-black text-7xl mb-5 -translate-x-63.5 bg-primary-950 p-6 pb-1 w-[150%]">
           Cabin {name}
         </h3>
 
-        <p className="text-lg text-accent-700 mb-10">
+        <p className="text-lg text-primary mb-10">
           <TextExpander>{description}</TextExpander>
         </p>
 
         <ul className="flex flex-col gap-4 mb-7">
           <li className="flex gap-3 items-center">
             <UsersIcon className="h-5 w-5 text-primary-600" />
-            <span className="text-lg">
+            <span className="text-md">
               For up to <span className="font-bold">{maxCapacity}</span> guests
             </span>
           </li>
           <li className="flex gap-3 items-center">
             <MapPinIcon className="h-5 w-5 text-primary-600" />
-            <span className="text-lg">
+            <span className="text-md">
               Located in the heart of the{" "}
               <span className="font-bold">Dolomites</span> (Italy)
             </span>
           </li>
           <li className="flex gap-3 items-center">
             <EyeSlashIcon className="h-5 w-5 text-primary-600" />
-            <span className="text-lg">
+            <span className="text-md">
               Privacy <span className="font-bold">100%</span> guaranteed
             </span>
           </li>

@@ -10,7 +10,7 @@ const Page = () => {
         placeholder="blur"
         quality={80}
         alt="Mountains and forests with two cabins"
-        className="object-cover"
+        className="object-cover blur-xs"
       />
 
       <div className="relative z-10 text-center">

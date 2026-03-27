@@ -18,14 +18,14 @@ function CabinCard({ cabin }) {
       </div>
 
       <div className="grow">
-        <div className="pt-5 pb-4 px-7 bg-primary-100">
+        <div className="pt-5 pb-4 px-7 bg-primary-900">
           <h3 className="text-primary font-semibold text-2xl mb-3">
             Cabin {name}
           </h3>
 
           <div className="flex gap-3 items-center mb-2">
             <UsersIcon className="h-5 w-5 text-primary-600" />
-            <p className="text-lg text-primary-900">
+            <p className="text-lg text-primary">
               For up to <span className="font-bold">{maxCapacity}</span> guests
             </p>
           </div>
@@ -43,11 +43,11 @@ function CabinCard({ cabin }) {
             ) : (
               <span className="text-3xl font-[350]">${regularPrice}</span>
             )}
-            <span className="text-primary-500">/ night</span>
+            <span className="text-accent-500">/ night</span>
           </p>
         </div>
 
-        <div className="bg-primary-200 border-t border-t-primary-500 text-right">
+        <div className="bg-primary-950 border-t border-t-primary-500 text-right">
           <Link
             href={`/cabins/${id}`}
             className="border-l border-primary-500 py-4 px-6 inline-block hover:bg-accent-300 transition-all hover:text-primary-900"

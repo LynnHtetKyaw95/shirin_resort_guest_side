@@ -2,6 +2,8 @@
 
 @layer theme {
   @theme {
+    --color-primary: #ffffff;
+
     --color-primary-50: #e1e8ef;
     --color-primary-100: #d4dee7;
     --color-primary-200: #b7c7d7;

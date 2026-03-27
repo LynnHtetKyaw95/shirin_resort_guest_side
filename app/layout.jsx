@@ -24,17 +24,17 @@ const RootLayout = ({ children }) => {
   return (
     <html lang="en">
       <body
-        className={`bg-primary-50 flex flex-col text-primary min-h-screen  ${quicksand.className}`}
+        className={`bg-primary-950 flex flex-col text-primary min-h-screen  ${quicksand.className}`}
       >
         <Header />
 
         <div className="flex-1 px-8 py-12 grid">
-          <main className="max-w-7xl mx-auto text-accent-800 w-full">
+          <main className="max-w-7xl mx-auto text-primary w-full">
             <ReservationProvider>{children}</ReservationProvider>
           </main>
         </div>
 
-        <footer className="py-10 flex justify-center items-center bg-primary-200">
+        <footer className="py-10 flex justify-center items-center bg-primary-800">
           <div>
             <p>2025 - {thisYear} Created by Zeph | &copy; The Shirin Resort</p>
           </div>
